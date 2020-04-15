@@ -142,10 +142,10 @@ body {
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
 	url('https://wx2.sbimg.cn/2020/04/15/f020837db79a28005590f9c648f4ece8.jpg') no-repeat 0% 0%/ cover;
-	cursor:url("https://gitee.com/yingcom/img/raw/master/computer_mouse_128px_1195948_easyicon.net.ico"),default;
+	/* cursor:url("https://gitee.com/yingcom/img/raw/master/computer_mouse_128px_1195948_easyicon.net.ico"),default; */
 }
 a {
-    cursor:url('https://gitee.com/yingcom/img/raw/master/computer_mouse_128px_1195948_easyicon.net.ico'), default;
+    /*cursor:url('https://gitee.com/yingcom/img/raw/master/computer_mouse_128px_1195948_easyicon.net.ico'), default; */
 }
 /* 手机端换用一张背景图片，可以不使用 */
 @media screen and (max-width:800px) { 
