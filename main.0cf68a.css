@@ -148,8 +148,8 @@ body {
     /* background-color:#fff; */
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-	url('https://wx2.sbimg.cn/2020/04/15/f020837db79a28005590f9c648f4ece8.jpg') no-repeat 0% 0%/ cover;
-	 cursor:url("assets/cur.ico"),default; */
+	url('assets/f020837db79a28005590f9c648f4ece8.jpg') no-repeat 0% 0%/ cover;
+	 cursor:url("assets/cur.ico"),default;
 }
 a {
     cursor:url('assets/cur.ico'), default;
@@ -159,7 +159,7 @@ a {
     body {
 		/*http://i-4.pp8.com/2017/7/14/1caaebf2-2089-49d9-b0a4-8b21a9f0320e.jpg?width=750&height=469 
 		https://oss.yansheng.xyz/wallpaper/your-name-phone2ys.jpg*/
-		background: url('https://wx1.sbimg.cn/2020/04/15/69e66ce2cbfb75813e51ed8885f00601.png') no-repeat fixed top;
+		background: url('https://oss.yansheng.xyz/wallpaper/your-name-phone2ys.jpg') no-repeat fixed top;
 	}
 }
 .archives-wrap {
