@@ -74,7 +74,7 @@
 			
 		</nav>
 		<nav>
-				本站共有 6 篇文章
+				本站共有 5 篇文章
 			</nav>
 		<nav class="header-smart-menu">
     		
@@ -247,102 +247,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2021/02/02/%E6%8F%92%E4%BB%B6%E5%BC%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-rtxa" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/02/rtxa/">rtxa</a>
-    </h1>
-  
-
-        
-        <a href="/2021/02/02/rtxa/" class="archive-article-date">
-  	<time datetime="2021-02-02T09:39:11.385Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="C-全平台插件式开发解决方案"><a href="#C-全平台插件式开发解决方案" class="headerlink" title="C++全平台插件式开发解决方案"></a>C++全平台插件式开发解决方案</h1><h2 id="1-全平台"><a href="#1-全平台" class="headerlink" title="1.全平台"></a>1.全平台</h2><p>  全平台的解决很简单，只要制定一份标准的API，然后再写出各个平台的实现即可。如：<br>有一份标准输入的API，In.h<br>     #define Stand_IO</p>
-<pre><code>class In
-{
-    public:
-        virtual char getchar();
-        virtual int getint();
-        //...
-    private:
-    //...
-}</code></pre><p>在Windows平台时:<br>     #include “StandIO/In.h”<br>     #include &lt;windows.h&gt;</p>
-<pre><code>class WIN_IN : public IO
-{
-    public:
-        char getchar()
-        {
-            //...
-        }
-        int getint()
-        {
-            //....
-        }
-
-}</code></pre><p>给出对应的实现。</p>
-<h2 id="2-插件管理器"><a href="#2-插件管理器" class="headerlink" title="2.插件管理器"></a>2.插件管理器</h2><p>插件可以用一个纯虚类作所有插件的基类,如：  </p>
-<pre><code>class Plugin
-{
-     private:
-     char* name;
-     short id;
-     public:
-     Plugin(char* n,short id);
-     virtual void OnStart();
-     virtual void OnFinish();
-}</code></pre><p>然后插件类就继承这个类即可。<br>然后在主程序中获取插件的对象，调用实现了的虚函数。</p>
-<h2 id="3-有几种调用的方式："><a href="#3-有几种调用的方式：" class="headerlink" title="3.有几种调用的方式："></a>3.有几种调用的方式：</h2><h5 id="1-事件响应"><a href="#1-事件响应" class="headerlink" title="1.事件响应"></a>1.事件响应</h5><h5 id="2-监听事件"><a href="#2-监听事件" class="headerlink" title="2.监听事件"></a>2.监听事件</h5><h5 id="…"><a href="#…" class="headerlink" title="…"></a>…</h5>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/02/02/rtxa/">展开全文 >></a>
         </p>
       
 
