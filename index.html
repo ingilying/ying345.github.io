@@ -189,41 +189,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="C-全平台插件式开发解决方案"><a href="#C-全平台插件式开发解决方案" class="headerlink" title="C++全平台插件式开发解决方案"></a>C++全平台插件式开发解决方案</h1><h2 id="1-全平台"><a href="#1-全平台" class="headerlink" title="1.全平台"></a>1.全平台</h2><p>  全平台的解决很简单，只要制定一份标准的API，然后再写出各个平台的实现即可。如：<br>有一份标准输入的API，In.h<br>     #define Stand_IO</p>
-<pre><code>class In
-{
-    public:
-        virtual char getchar();
-        virtual int getint();
-        //...
-    private:
-    //...
-}</code></pre><p>在Windows平台时:<br>     #include “StandIO/In.h”<br>     #include &lt;windows.h&gt;</p>
-<pre><code>class WIN_IN : public IO
-{
-    public:
-        char getchar()
-        {
-            //...
-        }
-        int getint()
-        {
-            //....
-        }
-
-}</code></pre><p>给出对应的实现。</p>
-<h2 id="2-插件管理器"><a href="#2-插件管理器" class="headerlink" title="2.插件管理器"></a>2.插件管理器</h2><p>插件可以用一个纯虚类作所有插件的基类,如：  </p>
-<pre><code>class Plugin
-{
-     private:
-     char* name;
-     short id;
-     public:
-     Plugin(char* n,short id);
-     virtual void OnStart();
-     virtual void OnFinish();
-}</code></pre><p>然后插件类就继承这个类即可。<br>然后在主程序中获取插件的对象，调用实现了的虚函数。</p>
-<h2 id="3-有几种调用的方式："><a href="#3-有几种调用的方式：" class="headerlink" title="3.有几种调用的方式："></a>3.有几种调用的方式：</h2><h5 id="1-事件响应"><a href="#1-事件响应" class="headerlink" title="1.事件响应"></a>1.事件响应</h5><h5 id="2-监听事件"><a href="#2-监听事件" class="headerlink" title="2.监听事件"></a>2.监听事件</h5><h5 id="…"><a href="#…" class="headerlink" title="…"></a>…</h5>
+        <h1 id="C-全平台插件式开发解决方案"><a href="#C-全平台插件式开发解决方案" class="headerlink" title="C++全平台插件式开发解决方案"></a>C++全平台插件式开发解决方案</h1><h2 id="1-全平台"><a href="#1-全平台" class="headerlink" title="1.全平台"></a>1.全平台</h2><p>  全平台的解决很简单，只要制定一份标准的API，然后再写出各个平台的实现即可。
+        
       
 
       
