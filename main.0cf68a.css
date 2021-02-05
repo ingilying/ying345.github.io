@@ -118,7 +118,7 @@ body{
 .left-col {
     /* background:#fff; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('/assets/ss.jpg') no-repeat 0% 20%/ cover;
+    url('/assets/42yr8y.jpg') no-repeat 51% 20%/ cover;
     width:300px;
     position:fixed;
     opacity:1;
@@ -148,7 +148,7 @@ body {
     /* background-color:#fff; */
     min-height:100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-	url('assets/f020837db79a28005590f9c648f4ece8.jpg') no-repeat 0% 0%/ cover;
+	url('assets/background1.jpg') no-repeat 0% 0%/ cover;
 	 cursor:url("assets/cur.ico"),default;
 }
 a {
